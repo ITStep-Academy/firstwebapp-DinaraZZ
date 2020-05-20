@@ -24,5 +24,12 @@ namespace WebApplication2
         {
 
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            string temp = TextBox2.Text;
+            TextBox2.Text = TextBox1.Text;
+            TextBox1.Text = temp;
+        }
     }
 }
